@@ -1,0 +1,234 @@
+---
+title: "R para Ciência de Dados"
+author: "<img src = 'https://d33wubrfki0l68.cloudfront.net/9b0699f18268059bdd2e5c21538a29eade7cbd2b/67e5c/img/logo/cursor1-5.png' width = '20%'>"
+date: ""
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "css/custom-intro.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+class: middle, center
+
+# bit.ly/amostra-primeiros-passos
+
+---
+class: middle, center
+
+# Sobre a Curso-R
+
+---
+## curso-r
+
+<img src="img/professores.png">
+
+---
+
+## Linha do tempo
+
+<center>
+<img src="img/linha_do_tempo.jpg" width = 47%></img>
+</center>
+
+---
+class: middle, center
+
+# Sobre o workshop
+
+#### Motivação + Exemplos
+
+---
+## Habilidades importantes para um cientista de dados
+
+<br>
+<br>
+
+.pull-left[
+* Curiosidade
+
+* Análise crítica
+
+* Conhecer o método científico
+
+* Modelar
+
+* Programar
+]
+
+--
+
+.pull-right[
+<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" style=" display: block; margin-left: auto; margin-right: auto;" width = "200px" height = "200px">
+]
+
+---
+class: middle, center
+
+# Por que programar?
+
+---
+## O computador é a ferramenta do cientista de dados
+
+<br>
+<center>
+<img src="img/parafuso.jpeg" width = 70%> 
+</center>
+
+---
+## Precisamos nos comunicar com o computador
+
+<br>
+<center>
+<img src="img/diagrama-programacao.png" width = 70%> 
+</center>
+
+---
+## Point-click vs linguagens de programação
+
+.pull-left[
+<br>
+<img src = "img/casa-da-barbie.jpg" style="width:80%">
+]
+
+.pull-right[
+<br> <br> <br> <br>
+<img src = "img/lego.jpg" style="width:80%">
+]
+
+
+---
+class: middle, center
+
+# Linguagens de programação ainda são linguagens
+
+---
+class: center, middle
+
+# 1. Código é texto
+# 2. Código é legível
+# 3. Código é aberto
+
+---
+class: middle, center
+
+# Código é texto
+
+---
+class: middle, center
+
+### Copiar & Colar 
+
+<img src="https://camo.githubusercontent.com/c8400b8b8aa5d9eb50641b3a1c47088cb9103f8b/687474703a2f2f7777772e6a6f736f66746563682e636f6d2f696d616765732f636f70792d70617374652e706e67" style="width: 95%">
+
+---
+class: middle, center
+
+### Stack Overflow
+
+<img src="https://user-images.githubusercontent.com/4706822/44841420-acea5b80-ac19-11e8-8205-f17c01fbb803.png" style="width: 70%">
+
+---
+class: middle, center
+
+# Código é legível
+
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(magrittr)
+library(magick)
+library(ggplot2)
+library(dplyr)
+library(viridis)
+```
+
+```{r, eval = FALSE}
+image_read("https://jeroen.github.io/images/frink.png") %>%
+  image_rotate(270) %>%
+  image_background("blue", flatten = TRUE) %>%
+  image_border("red", "10x10") %>%
+  image_annotate("Liguagens de programação ainda\nsão linguagens!", 
+                 color = "white", size = 30)
+```
+
+
+.pull-left[
+<img src = "https://jeroen.github.io/images/frink.png" width = 40%>
+]
+
+
+--
+
+.pull-right[
+<br>
+```{r, eval = TRUE, echo = FALSE}
+image_read("https://jeroen.github.io/images/frink.png") %>%
+  image_rotate(270) %>%
+  image_background("blue", flatten = TRUE) %>%
+  image_border("red", "10x10") %>%
+  image_annotate("Liguagens de programação ainda\nsão linguagens!", 
+                 color = "white", size = 30)
+```
+]
+
+
+---
+
+## Código te dá confiança de que está certo!
+
+<center>
+<img src="https://user-images.githubusercontent.com/4706822/44843506-dbb70080-ac1e-11e8-892b-744a60bafaeb.png" style="width:80%;">
+</center>
+
+---
+class: middle, center
+
+# Código é aberto
+
+---
+
+## Grátis
+
+* Estudantes podem usar as mesmas ferramentas que os profissionais
+* Todos podem usar as melhores ferramentas independente do poder financeiro
+* Qualquer um pode reproduzir as suas análises
+
+
+## Aberto
+
+* Você pode corrigir problemas
+* Você pode desenvolver suas próprias ferramentas
+
+### Todas as linguagens de programação modernas são open-source.
+
+---
+class: middle, center
+
+# Por que usar o R?
+
+---
+
+## Ciclo da ciência de dados
+
+<img src="img/ciclo-ciencia-de-dados.png" style = "display: block; margin-left: auto; margin-right: auto;">
+
+---
+
+## Ciclo da ciência de dados
+
+<img src="img/ciclo-ciencia-de-dados-pacotes.png" style = "display: block; margin-left: auto; margin-right: auto;">
+
+---
+
+# Exemplos
+
+## Vamos ao R!
+
+<br>
+<center>
+<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" style=" display: block; margin-left: auto; margin-right: auto;" width = "200px" height = "200px">
+</center>
