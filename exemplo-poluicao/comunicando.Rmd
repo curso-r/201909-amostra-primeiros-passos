@@ -1,0 +1,20 @@
+---
+title: "Meu primeiro relatório em RMarkdown"
+author: "William Amorim"
+date: "9/16/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introdução
+
+# Análise descritiva
+
+### Séries temporais
+
+### Por hora
+
+### Por dia da semana
